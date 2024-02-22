@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    grid-template-columns: 2fr 2fr;
+}
+
+.left{
+    border: 100px;
+    background-color: aqua;
+    /* padding: 100px; */
+    width: 50%;
+    height: 700px;
+
+}
+
+.right{
+    background-color: brown;
+    width: 50%;
+    height: 700px;
+}
+
+.title{
+    /* padding-top: 30px; */
+    margin-left: 40px;
+}
+
+.tbox{
+    margin-left: 40px;
+    height: 30px;
+    width: 680px;
+}

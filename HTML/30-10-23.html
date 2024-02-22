@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+       margin: 0; 
+       padding: 0;
+    }
+    span{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+        color: darkblue;
+    }
+
+    .box{
+        padding: 2.5em;
+        margin: 10px;
+    }
+
+    .submit{
+        background-color: rgb(2, 158, 255);
+        border-style: solid;
+        border: none;
+        color: white;
+        height: 36px;
+        width: 74px;
+        cursor: pointer;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <h1>Started Date : <span>30-10-23</span></h1>
+    <hr>
+    <h3 style="margin: 0; padding: 0;">Intro</h3>
+    <p>My Name's Linn_Htut_Paing.<br>I was born in Yangon.</p>
+    <br>
+    <div>Hello Yangon</div>
+    <br>
+    <form action="http://www.google.com" target="_blank" autocomplete="off" method="get">
+        <!-- method ka post nl get br kwr ll myy yan -->
+
+        <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">First Name :</label>
+        <input type="text" name="fname" id="fname" required>
+        <!-- <input type="text" name="fname" id="fname" autofocus required> -->
+
+        <br>
+
+        <label for="lname">Last Name :</label>
+        <input type="text" name="lname" id="lname" required>
+
+        <br>
+
+        <label for="gender">Gender :</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+        <br>
+
+        <label for="national">Nationality :</label>
+        <select name="national" id="national">
+            <option value="mm">Myanmar</option>
+            <option value="jp">Japan</option>
+            <option value="ch" selected>China</option>
+            <option value="th">Thailand</option>
+            <option value="sg">Singapore</option>
+        </select>
+
+        <br>
+        
+        <label for="country_code">Country Code :</label>
+        <select name="country_code" id="country_code">
+            <option value="mm">+95</option>
+            <option value="jp">+65</option>
+            <option value="ch">+23</option>
+            <option value="ch">+97</option>
+            <option value="ch">+546</option>
+        </select>
+        
+        <br>
+
+        <label for="address">Address</label>
+        <br>
+        <input type="textarea" name="address" id="address" style="width: 200px; height: 50px;">
+        
+        <br><br><br><br>
+
+        <input type="submit" class="submit">
+        <!-- <input type="button" name="button" id="button" value="Login"> -->
+    </fieldset>
+    </form>
+    <hr>
+    <hr>
+    <br>
+
+    <article class="box">I am a box.</article>
+
+</body>
+</html>

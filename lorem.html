@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.new{
+    width: 300px;
+    border: 1px;
+    border-radius: 10px;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0.251);
+    color: aliceblue;
+    padding: 10px;
+    
+    position: relative;
+}
+
+.circle{
+    display: flex;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    font-size: 13px;
+    background-color: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: -5px;
+    top: -5px;
+
+    z-index: -1;
+}
+
+.above {
+    z-index: 0;
+}
+</style>
+
+
+
+<body>
+    <div class="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam officiis odit.   Veritatis ullam earum quis, aperiam tempore mollitia rem aliquam quam? Molestias eaque laborum possimus sunt voluptates ab hic quidem voluptatum, in repellat! Est ratione saepe omnis quia ad
+        <div class="circle ab">+99</div>
+        <div class="circle above">69</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+        
+        .container {
+            background-image: url(./Pic/zero-two-with-the-franxx-v0-4dqewjbn7rzb1.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .card{
+            padding: 10px;
+            border-radius: 10px;
+            /* background-color: black; */
+            border: 1px solid black;
+            background: rgba(0, 0, 0, 0.132);
+            text-align: start;
+            width: 275px;
+            /* height:200px; */
+            margin: 10px;
+            font-size: 20px;
+            color: aliceblue;
+            text-wrap: wrap;
+
+            position: relative;
+        }
+
+        .blur{
+            background-color: rgba(0, 0, 0, 0.434);
+            backdrop-filter: blur(5px);
+
+            position: absolute;
+            right: 40px;
+            top: 50px;
+        }
+
+        .new{
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima debitis incidunt vero qui numquam error expedita nihil sint, sed, nam eaque ducimus consectetur inventore delectus vel natus iste alias.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima debitis incidunt vero qui numquam error expedita nihil sint, sed, nam eaque ducimus consectetur inventore delectus vel natus iste alias.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima debitis incidunt vero qui numquam error expedita nihil sint, sed, nam eaque ducimus consectetur inventore delectus vel natus iste alias.</div>
+        <div class="blur card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima debitis incidunt vero qui numquam error expedita nihil sint, sed, nam eaque ducimus consectetur inventore delectus vel natus iste alias.</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+        /* *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } */
+        body{
+            background-color: rgb(208, 208, 36);
+        }
+        nav{
+            background-color: rgb(14, 133, 22);
+            border-radius: 15px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            text-align: center;
+            padding: 10px;
+        }
+        a{
+            color: black;
+        }
+        
+        section{
+            display: grid;
+            grid-template-columns: 1.5fr 3fr;
+        }
+        aside{
+            background-color: white;
+        }
+        
+        .sidebar{
+            padding: 10px;
+        }
+
+        .contant{
+            height: 600px;
+            display: grid;
+            grid-template-rows: 4fr 4fr 4fr;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+
+        div{
+            padding: 10px 0;
+            text-align: center;
+        }
+        .search{
+            width: 120px;
+            margin-right: 15px;
+        }
+        .button{
+            background-color: white;
+            border: 0;
+        }
+        
+</style>
+
+<body>
+    <nav class="container">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+    </nav>
+
+    <section>
+        <aside class="sidebar">
+            <div><input type="text" placeholder="Search" class="search"><button class="button">search</button></div>
+            <div>Dashboard</div>
+            <hr>
+            <div>User</div>
+            <hr>
+            <div>Categories</div>
+            <hr>
+            <div>Products</div>
+            <hr>
+            <div>Management</div>
+            <hr>
+
+        </aside>
+        <article class="contant">
+        <article class="yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia dolor veniam autem officiis, nesciunt, labore esse aut nisi, eveniet officia. Architecto impedit maiores quasi animi explicabo fugiat voluptatibus culpa tempora sequi consequuntur iusto aperiam iure eveniet, quia recusandae sunt.</article>
+        <article class="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reiciendis quia? Incidunt tempore ex molestiae? Dolores cupiditate assumenda rem fugiat nesciunt dolorum nam nisi, praesentium sapiente eum debitis recusandae, doloribus dignissimos labore consectetur rerum omnis magni eius. Dolor, culpa debitis?</article>
+        <article class="red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quae ullam doloremque voluptatem ad omnis eos dolorem nemo iusto facilis, atque corrupti, minima quis! Distinctio in maxime repellat odit nesciunt voluptatum corrupti perferendis, libero numquam earum itaque totam molestiae velit.</article>
+        </article>
+    </section>
+</body>
+</html>

@@ -3,30 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/3.11.23.css">
+    <title>My Taks</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../Pic/zerotwo-franxx.png);
+    /* background-image: url(../Pic/zero-two-beautiful.jpg); */
+    /* background-image: url(../Pic/zerotwo-darling.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(4, 26, 47);
+    font-family: Helvetica;
+}
+
+section{
+    height: 85vh;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+fieldset{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.left{
+    border-right: 2px solid black;
+    /* background-color: aqua; */
+    /* padding: 100px; */
+}
+
+.right{
+    /* background-color: brown; */
+}
+
+.title{
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.tbox{
+    margin-top: 6px;
+    border-radius: 5px;
+    height: 40px;
+    width: 700px;
+}
+
+.priority{
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.tpri{
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid;
+    height: 35px;
+    width: 700px;
+}
+
+.description{
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.tde{
+    margin-top: 6px;
+    border-radius: 5px;
+    height: 400px;
+    width: 700px;
+}
+
+.button{
+    border-radius: 5px;
+    width: 110px;
+    height: 37px;
+    background-color: rgb(4, 26, 47);
+    color: white;
+    font-size: 15px;
+    margin-left: 590px;
+    padding-right: 50px;
+    
+    position: relative;
+}
+
+.plus{
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    border: 1px solid rgb(4, 26, 47);
+    background-color: rgba(128, 128, 128, 0.722);
+    padding: 0.1px 5px;
+    border-radius: 5px;
+}
+
+
+.rg{
+    font-size: 15px;
+    color: rgb(4, 26, 47);
+    font-weight: bold;
+    font-family: Helvetica;
+
+    position: relative;
+}
+
+u{
+    font-size: 18px;
+}
+
+.main{
+    background-color: orangered;
+    color: aliceblue;
+    font-weight: normal;
+    width: 70px; 
+    padding: 3px 0px;   
+    
+    text-align: center;
+    border-radius: 5px 0px 5px 0px;
+    /* font-family: Helvetica; */
+    font-family: Monospace;
+    font-size: 15px;
+
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+}
+
+.normal{
+    background-color: rgb(4, 26, 47);
+    color: aliceblue;
+    font-weight: normal;
+    width: 70px; 
+    padding: 3px 0px;   
+    
+    text-align: center;
+    border-radius: 5px 0px 5px 0px;
+    /* font-family: Helvetica; */
+    font-family: Monospace;
+    font-size: 15px;
+
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+}
+
+.low{
+    background-color: rgb(15, 164, 15);
+    color: aliceblue;
+    font-weight: normal;
+    width: 70px; 
+    padding: 3px 0px;   
+    
+    text-align: center;
+    border-radius: 5px 0px 5px 0px;
+    /* font-family: Helvetica; */
+    font-family: Monospace;
+    font-size: 15px;
+
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+}
+
+.icon{
+    position: relative;
+}
+.img{
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 705px;
+    /* top: 1px; */
+}
+</style>
 </head>
 <body>
-    <h3>Hello People</h3>
+    <h3 class="icon"><img src="https://icons.veryicon.com/png/o/miscellaneous/myicons/book-209.png" width="23px" class="img"> </img> My Taks</h3>
+    <br>
     <section>
         <article class="left">
             <fieldset>
-                <br>
                 <label for="title" class="title">Title</label><br>
                 <input type="text" class="tbox">
-                <br>
-                <label for="priority">Priority</label><br>
-                <select name="" id="">
+                <br><br>
+                <label for="priority" class="priority">Priority</label><br>
+                <select name="" id="" class="tpri" >
                     <option value="">Main</option>
-                    <option value="">dsad</option>
-                    <option value="">sadad</option>
+                    <option value="">Normal</option>
+                    <option value="">Low</option>
                 </select>
-                <br>
-                <label for="">Description</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <br><br>
+                <label for="description" class="description">Description</label><br>
+                <input type="text" class="tde"></input>
+                <br><br>
+                <button class="button">Add<div class="plus">+</div>
+                </button>
             </fieldset>
         </article>
-        <article class="right"></article>
+
+        <article class="right">
+            <fieldset class="rg">
+                
+                <div><u>Learn Css</u></div>
+                <br>
+                <div>What is css?</div>
+                <div>What is the main concept?</div>
+                <div>Tricks and best practice</div>
+                <div class="main">Main</div>
+                <br>
+            </fieldset>
+
+            <fieldset class="rg">
+                <div><u>Learn JavaScript</u></div>
+                <br>
+                <div>What is JavaScript?</div>
+                <div>What is the main concept?</div>
+                <div>Tricks and best practice</div>
+                <div class="normal">Normal</div>
+                <br>
+            </fieldset>
+
+            <fieldset class="rg">
+                <div><u>Learn HTML Table Styling</u></div>
+                <br>
+                <div>Tricks and best practice</div>
+                <div class="low">Low</div>
+                <br>
+            </fieldset>
+        </article>
     </section>
 
 </body>

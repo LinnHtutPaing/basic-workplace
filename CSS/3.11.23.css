@@ -6,31 +6,72 @@
 
 section{
     display: flex;
-    grid-template-columns: 2fr 2fr;
+    /* grid-template-columns: 2fr 2fr; */
+}
+
+fieldset{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .left{
-    border: 100px;
+    border-right: 3px solid black;
     background-color: aqua;
     /* padding: 100px; */
     width: 50%;
-    height: 700px;
+    height: 730px;
 
 }
 
 .right{
     background-color: brown;
     width: 50%;
-    height: 700px;
+    height: 730px;
 }
 
 .title{
-    /* padding-top: 30px; */
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .tbox{
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    margin-top: 6px;
+    border-radius: 5px;
     height: 30px;
-    width: 680px;
+    width: 700px;
+}
+
+.priority{
+    /* margin-left: 40px; */
+}
+
+.tpri{
+    /* margin-left: 40px; */
+    margin-top: 6px;
+    border-radius: 5px;
+    height: 30px;
+    width: 700px;
+}
+
+.description{
+    /* margin-left: 40px; */
+}
+
+.tde{
+    /* margin-left: 40px; */
+    margin-top: 6px;
+    border-radius: 5px;
+    height: 300px;
+    width: 700px;
+}
+
+.button{
+    
+    width: 110px;
+    height: 30px;
+    background-color: rgb(4, 4, 92);
+    color: white;
+    font-size: 15px;
+    align-items: end;
 }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroTwo</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 60px 220px 0px 220px ;
+        }
+
+        nav{
+            /* background-color: #c8c8c8; */
+            width: 100%;
+            height: 100px;
+            margin-bottom: 15px;
+            border: 2px solid #c8c8c8;
+            border-radius: 5px;
+        }
+
+        section{
+            display: grid;
+            grid-template-columns: 1.5fr 3fr;
+            height: 67vh;
+        }
+
+        aside{
+            /* background-color: pink; */
+            height: 100%;
+            width: 100%;
+            border: 2px solid #c8c8c8;
+            border-radius: 5px;
+            /* margin-right: 15px; */
+            padding: 15px;
+        }
+
+        .pic1{
+            border: 2px solid #c8c8c8;height: 150px;
+            border-radius: 5px;
+            width: 100%;
+
+            background-image: url(./Pic/zerotwo-franxx.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .profile{
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        article{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            margin-left: 15px;
+        }
+
+        .top{
+            /* background-color: blue; */
+            margin-bottom: 7.5px;
+            border: 2px solid #c8c8c8;
+            border-radius: 5px;
+            padding: 15px;
+
+            /* position: relative; */
+        }
+        .pic{
+            border: 2px solid #c8c8c8;
+            height: 100px;
+            border-radius: 5px;
+            width: 30%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .left{
+            float: left;
+            margin-right: 10px;
+            background-image: url(./Pic/zerotwo-darling.png);
+
+            transition: all .4s ease-in-out;
+
+        }
+
+        .left:hover{
+            transform: scale(5);
+            margin-top: 50px;
+            border: none;
+        }
+
+        /* .right:hover{
+            position: fixed;
+            top: 20vh;
+            transform: scale(2);
+            margin-top: 50px;
+            border: none;
+        } */
+
+        .right{
+            float:right;
+            margin-left: 10px;
+            background-image: url(./Pic/zerotwo.jpg);
+            /* transition: all .4s ease-in-out; */
+        }
+
+        .bottom{
+            /* background-color: green; */
+            margin-top: 7.5px;
+            border: 2px solid #c8c8c8;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <section>
+        <aside>
+            <div class="pic1"></div>
+            <br>
+            <u class="profile">Profile</u>
+            <p> <span style="margin-left:50px;">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Fuga eos natus aut aperiam error laboriosam, hic officia nisi optio fugit reiciendis libero tempora sapiente iusto cum esse eaque cumque quisquam facere. Eligendi nemo, nam tempora eaque cupiditate neque! In perspiciatis illum voluptas praesentium earum quo minus tenetur omnis quas quia.</p>
+        </aside>
+        <article>
+            <div class="top">
+                <div class="pic left"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit earum, dignissimos quod aliquam quae quidem, voluptatibus quo pariatur neque ea eius, magni impedit molestiae amet eveniet reprehenderit blanditiis natus? Distinctio magnam blanditiis hic, neque amet atque veritatis facilis voluptatum quaerat! Necessitatibus commodi ipsa molestias ipsam qui, voluptatibus amet? Alias accusamus nulla maxime, neque et cum nihil cumque repudiandae deserunt dolor, ratione quos expedita distinctio vitae, doloribus sequi dicta aut.</p>
+            </div>
+            <div class="bottom">
+                <div class="pic right"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid veniam optio earum numquam, eligendi ducimus in, non, adipisci maiores iure harum ex aspernatur impedit rerum eveniet corrupti amet debitis similique laboriosam nemo asperiores magnam rem? Dolor iste voluptate placeat doloribus ex explicabo, nulla, illo ratione quos odit architecto veniam dicta velit. Nam quis eius dicta nisi ut, eligendi, a ullam mollitia odio deserunt sunt illo quae est minus delectus quisquam.</p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

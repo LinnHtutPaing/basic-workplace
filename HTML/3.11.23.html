@@ -27,11 +27,12 @@ h3{
     font-family: Helvetica;
 }
 
-section{
+.container{
     height: 85vh;
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
 }
 
 fieldset{
@@ -41,13 +42,20 @@ fieldset{
 }
 
 .left{
-    border-right: 2px solid black;
+    width: 50%;
+    height: 100%;
+    height: 720px;
+    /* border-right: 2px solid black; */
     /* background-color: aqua; */
     /* padding: 100px; */
 }
 
 .right{
+    width: 50%;
+    height: 720px;
+    border-left: 2px solid black;
     /* background-color: brown; */
+    margin-right: 30px;
 }
 
 .title{
@@ -59,7 +67,7 @@ fieldset{
     margin-top: 6px;
     border-radius: 5px;
     height: 40px;
-    width: 700px;
+    width: 100%;
 }
 
 .priority{
@@ -72,7 +80,8 @@ fieldset{
     border-radius: 5px;
     border: 1px solid;
     height: 35px;
-    width: 700px;
+    /* width: 700px; */
+    width: 100%;
 }
 
 .description{
@@ -83,20 +92,21 @@ fieldset{
 .tde{
     margin-top: 6px;
     border-radius: 5px;
-    height: 400px;
-    width: 700px;
+    height: 420px;
+    /* width: 700px; */
+    width: 100%;
 }
 
 .button{
+    float: right;
     border-radius: 5px;
     width: 110px;
     height: 37px;
     background-color: rgb(4, 26, 47);
     color: white;
     font-size: 15px;
-    margin-left: 590px;
     padding-right: 50px;
-    
+
     position: relative;
 }
 
@@ -120,6 +130,8 @@ fieldset{
     color: rgb(4, 26, 47);
     font-weight: bold;
     font-family: Helvetica;
+    width: 100%;
+    height: 150px;
 
     position: relative;
 }
@@ -184,7 +196,9 @@ u{
 
 .icon{
     position: relative;
+    padding-bottom: 15px;
 }
+
 .img{
     align-items: center;
     justify-content: center;
@@ -193,14 +207,74 @@ u{
     left: 705px;
     /* top: 1px; */
 }
+
+@media (min-width: 320px) and (max-width: 769px) {
+    body{
+        background-image: url(../Pic/Zero\ Two\ Mobile\ size.jpg);
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: repeat;
+        
+        background-image: none;
+    }
+    .container{
+        /* display: flex; */
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-flow: column-reverse; */
+        /* flex-wrap: wrap-reverse; */
+        /* grid-row: auto; */
+        /* grid-template-rows: 3fr 3fr; */
+        /* flex-flow: column-reverse; */
+    }
+    
+    .rg{
+        height: 140px;
+    }
+
+    .right{
+        width: 100%;
+        /* margin-right: 30px; */
+        border-left: none;
+        padding-right: 30px;
+    }
+    
+    .left{
+        width: 100%;
+        height: 656.4px;
+        border-right: none;
+    }
+    .lf{
+        margin-top: 0px;
+    }
+    
+    .rglow{
+        margin-bottom: 260px;
+    }
+    
+    .rgmain{
+        margin-top: 45px;
+    }
+    
+    .tbox,.tpri{
+        height: 30px;
+    }
+    .tde{
+        height: 300px;
+    }
+    
+    .button{
+        margin-top: 75px;
+    }
+}
 </style>
 </head>
 <body>
-    <h3 class="icon"><img src="https://icons.veryicon.com/png/o/miscellaneous/myicons/book-209.png" width="23px" class="img"> </img> My Taks</h3>
-    <br>
-    <section>
+    <h3 class="icon"> My Taks</h3>
+    <section class="container">
         <article class="left">
-            <fieldset>
+            <fieldset class="lf">
                 <label for="title" class="title">Title</label><br>
                 <input type="text" class="tbox">
                 <br><br>
@@ -212,7 +286,7 @@ u{
                 </select>
                 <br><br>
                 <label for="description" class="description">Description</label><br>
-                <input type="text" class="tde"></input>
+                <textarea name="" id="" cols="30" rows="10" class="tde"></textarea>
                 <br><br>
                 <button class="button">Add<div class="plus">+</div>
                 </button>
@@ -220,8 +294,8 @@ u{
         </article>
 
         <article class="right">
+        <div class="rgmain">
             <fieldset class="rg">
-                
                 <div><u>Learn Css</u></div>
                 <br>
                 <div>What is css?</div>
@@ -230,6 +304,7 @@ u{
                 <div class="main">Main</div>
                 <br>
             </fieldset>
+        </div>
 
             <fieldset class="rg">
                 <div><u>Learn JavaScript</u></div>
@@ -241,6 +316,7 @@ u{
                 <br>
             </fieldset>
 
+        <div class="rglow">
             <fieldset class="rg">
                 <div><u>Learn HTML Table Styling</u></div>
                 <br>
@@ -248,6 +324,7 @@ u{
                 <div class="low">Low</div>
                 <br>
             </fieldset>
+        </div>
         </article>
     </section>
 
